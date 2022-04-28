@@ -1,0 +1,114 @@
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  line-height: calc(1em + 0.5rem);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* ----- */
+.container {
+  margin: auto;
+  width: 1200px;
+}
+
+.header-image {
+  background-image: url(../images/main.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* how to auto adjust image height */
+  height: 300px;
+  /* anchor point for header text */
+  position: relative;
+}
+
+.header-text {
+  color: #fff;
+  /* center position div */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* center text in div */
+  text-align: center;
+}
+
+.header-text h1 {
+  font-size: 80px;
+}
+
+.header-text h3 {
+  font-size: 30px;
+}
+
+/* List of recipes */
+.recipes {
+  margin-top: 40px;
+}
+
+.recipe-list {
+  list-style: none;
+  padding: unset;
+  margin: unset;
+}
+
+.recipe-element {
+  /* horizontal alignment for list */
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.recipe-element .recipe-link {
+  text-decoration: none;
+}
+
+.recipe-element img {
+  width: 300px;
+  /* How to make images in list have same height */
+  /* But still retain proportions width & height*/
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.recipe-link h2 {
+  margin-top: 10px;
+}
